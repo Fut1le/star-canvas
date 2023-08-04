@@ -5,7 +5,8 @@
 		<title>Stars</title>
 	</head>
 	<body>
-		<canvas id="canvas"></canvas> 		
+		<canvas id="canvas"></canvas> 
+		
 		<script>
 			"use strict";
 			var canvas = document.getElementById('canvas'),
@@ -96,7 +97,7 @@
 			
 			function animation() {
 				ctx.globalCompositeOperation = 'source-over';
-				ctx.globalAlpha = 0.5; //尾巴
+				ctx.globalAlpha = 0.5; 
 				ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 2)';
 				ctx.fillRect(0, 0, w, h)
 				
